@@ -1,5 +1,9 @@
 # NEngine
 
+<p align="center">
+  <img src="Res/Logo.bmp" alt="NEngine logo">
+</p>
+
 3D Engine **NEngine**, written in **2002-2003** by **Alexey Egorov**.
 
 This was a **school project** made when the author was **15-16 years old**.
