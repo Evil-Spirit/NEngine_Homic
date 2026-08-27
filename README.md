@@ -23,6 +23,10 @@ Win32 / Microsoft Developer Studio (Visual C++) build system.
   - `.mds` — static models with per-face material groups.
 - **Materials** — diffuse color, transparency/opacity, two-sided and wireframe
   flags, plus reflection maps.
+- **Pseudo-reflection** — sphere-mapping technique: the surface normal is
+  rotated into view space and used directly as texture coordinates into a
+  pre-made environment map, added over the diffuse pass with additive blending
+  (a fake, cheap "glossy" look that tracks the camera).
 - **Textures** — Targa (`.tga`) loader with an on-the-fly texture cache and
   deduplication, mipmap generation, combined diffuse+opacity textures and
   procedurally generated Phong (specular) maps.
