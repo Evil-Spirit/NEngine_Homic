@@ -1,0 +1,42 @@
+/*
+	commands:
+	mov
+	rot
+	sca
+	des
+	anm
+	syp 
+*/
+Level file : name.mds
+object 01 {
+	Position : 10,10,10
+	Source : object.mda
+}
+effector 01 {
+	polygon {
+		10,10,10
+		20,20,20
+		5,5,5
+	}
+	Activate : MOVE || USE || SHOT || TIME(10)
+	Action {
+		mov 01 [20,20,20]
+		rot 01 [10,10,10]
+		loop snd "move.wav"
+		act 02
+	}
+
+}
+effector 02 {
+	Action {
+		des 01
+	}
+}
+camera 
+scene {
+	auto
+	setcan
+	mov cam, [10,10,10]
+	manual
+}
+

@@ -1,0 +1,32 @@
+# Build artifacts
+*.exe
+*.obj
+*.o
+*.lib
+*.pdb
+*.ilk
+*.map
+*.bsc
+*.sbr
+*.idb
+*.pch
+*.res
+*.ncb
+*.opt
+*.plg
+*.aps
+
+# Generated output
+NEngine.exe
+NEngine.log
+NEngine.con
+*.log
+*.con
+
+# Build output directories
+Debug/
+NEngine_/
+Release/
+
+# Source archives
+*.rar
