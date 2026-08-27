@@ -65,6 +65,7 @@ Console commands: `fov <n>`, `consize <n>`, `fps`, `halt`.
 ## Credits
 
 - **Dogi model** — Dmitriy Kokoteev.
+- **Karpichev Pavel (aka Drive)** — contributor.
 
 ## Building
 
