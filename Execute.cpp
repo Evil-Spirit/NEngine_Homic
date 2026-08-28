@@ -26,19 +26,19 @@ BOOL CALLBACK DialogProc(HWND  dWnd, UINT  uMsg, WPARAM  wParam, LPARAM  lParam)
 			break;
 
 		case WM_INITDIALOG:
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"320x200");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"320x240");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"400x300");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"512x384");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"640x400");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"640x480");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"800x600");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"1024x768");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"1280x1024");
-			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (long)"1600x1200");
-			SendDlgItemMessage(dWnd, IDC_COMBO_BPP , CB_ADDSTRING, (long)0, (long)"08 Bit");
-			SendDlgItemMessage(dWnd, IDC_COMBO_BPP , CB_ADDSTRING, (long)0, (long)"16 Bit");
-			SendDlgItemMessage(dWnd, IDC_COMBO_BPP , CB_ADDSTRING, (long)0, (long)"32 Bit");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"320x200");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"320x240");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"400x300");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"512x384");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"640x400");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"640x480");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"800x600");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"1024x768");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"1280x1024");
+			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_ADDSTRING, (long)0, (LPARAM)"1600x1200");
+			SendDlgItemMessage(dWnd, IDC_COMBO_BPP , CB_ADDSTRING, (long)0, (LPARAM)"08 Bit");
+			SendDlgItemMessage(dWnd, IDC_COMBO_BPP , CB_ADDSTRING, (long)0, (LPARAM)"16 Bit");
+			SendDlgItemMessage(dWnd, IDC_COMBO_BPP , CB_ADDSTRING, (long)0, (LPARAM)"32 Bit");
 
 			SendDlgItemMessage(dWnd, IDC_COMBO_MODE, CB_SETCURSEL, (long)5, (long)0);
 			SendDlgItemMessage(dWnd, IDC_COMBO_BPP , CB_SETCURSEL, (long)1, (long)0);

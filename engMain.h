@@ -89,7 +89,7 @@ void mainChangeVideoMode(int width, int height, int bits) {
 			engFScr=FALSE;
 		} else logPrint("OK.\n");
 }
-void PASCAL OneTimer(UINT wTimerID, UINT msg,DWORD dwUser, DWORD dw1, DWORD dw2) {
+void PASCAL OneTimer(UINT wTimerID, UINT msg,DWORD_PTR dwUser, DWORD_PTR dw1, DWORD_PTR dw2) {
 	usrSceneChange(0);
 }
 bool mainEngineInit(char* title, int width, int height, int bits, bool fullscreen) {

@@ -36,7 +36,7 @@ void conInit(unsigned char tex, char *name)
 	conCom = new char[41];
 	for (int i=0;i<41;i++) conCom[i]=0;
 	conHist = new char*[CON_MAX_HIST];
-	for (i=0;i<CON_MAX_HIST;i++)
+	for (int i=0;i<CON_MAX_HIST;i++)
 	{
 		conHist[i] = new char[41];
 		for (int j=0;j<41;j++) conHist[i][j] = 0;

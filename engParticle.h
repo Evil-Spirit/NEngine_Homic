@@ -16,10 +16,10 @@ public:
 };
 cParSys::cParSys()
 {
-	MessageBox(NULL,"OK, I am INITIALIZED!","OK",MB_OK);
+	//MessageBox(NULL,"OK, I am INITIALIZED!","OK",MB_OK);
 }
 cParSys::~cParSys()
 {
-	MessageBox(NULL,"OK, I am DE_INITIALIZED!","OK",MB_OK);
+	//MessageBox(NULL,"OK, I am DE_INITIALIZED!","OK",MB_OK);
 }
 #endif

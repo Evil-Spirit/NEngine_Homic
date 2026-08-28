@@ -64,8 +64,10 @@ bool usrSceneInit(void)
 //////////////////////////////////////////////////////////////////////////////////////////////
 	gamLevel.load("mds\\homic.mds");
 	
- 	gamModel.load ("mda\\womdown.mda");
-	gamModel1.load("mda\\womup.mda");
+ 	//gamModel.load ("mda\\womdown.mda");
+	//gamModel1.load("mda\\womup.mda");
+ 	gamModel.load ("mda\\DogiLegs.mda");
+	gamModel1.load("mda\\DogiUp.mda");
 
 
 	gamSky.load("mds\\SkyBox.mds");
@@ -211,7 +213,7 @@ void usrSceneDraw(void) {
 	glDepthMask(false);
 	
 	glTranslated(0,0,-0.6*METER);
-	modDrawBillboard(0.5*METER);
+	//modDrawBillboard(0.5*METER);
 
 	glTranslated(0,0,0.6*METER);
 	modDrawBillboard(0.5*METER);

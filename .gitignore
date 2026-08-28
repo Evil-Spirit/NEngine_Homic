@@ -27,6 +27,10 @@ NEngine.con
 Debug/
 NEngine_/
 Release/
+build/
+build-*/
+out/
+.vs/
 
 # Source archives
 *.rar
