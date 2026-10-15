@@ -73,6 +73,17 @@ Console commands: `fov <n>`, `consize <n>`, `fps`, `halt`.
 
 ## Building
 
-The project targets Microsoft Visual C++ (`.dsp`/`.dsw` project files, Developer
-Studio 5/6 era) on Windows. Requires OpenGL, GLU and the Windows SDK.
+The original project targets Microsoft Visual C++ (`.dsp`/`.dsw` project files,
+Developer Studio 5/6 era) on Windows. Requires OpenGL, GLU and the Windows SDK.
 Run `clean.bat` to remove build artifacts.
+
+A **`build_windows`** branch provides a modern **CMake** build for Windows
+(x86/x64) with MSVC compatibility fixes. To build it:
+
+```
+cmake -B build -S .
+cmake --build build --config Release
+```
+
+The build produces `NEngine.exe` and copies the asset folders (Textures, MDS,
+MDA, Weapons, Mats) next to it automatically.
